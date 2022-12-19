@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 900px;
+            height: 600px;
+            background-color: orange;
+            margin: 50px auto;
+            border: 3px solid red;
+            position: relative;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            padding: 10px;
+            border: 2px solid black;
+            color: #fff;
+            font-size: 24px;
+        }
+        .box1{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .box2{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .box3{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        .box4{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .box5{
+            position: absolute;
+            /* top: calc(50% - 50px);
+            left: calc(50% - 50px); */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .box6{
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .box7{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .box8{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .box9{
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        section{
+            height: 100vh;
+            border: 2px solid green;
+        }
+        a.scrollToTop{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            text-decoration: none;
+            font-size: 24px;
+            width: 50px;
+            text-align: center;
+            height: 50px;
+            background: black;
+            border-radius: 50%;
+            color: #fff;
+            z-index: 10;
+        }
+        .stickypara{
+            padding: 20px;
+            border: 2px solid;
+            position: sticky;
+            position: -webkit-sticky;
+            /* top: 0; */
+            bottom: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="javascript:;" class="scrollToTop">
+
+    </a>
+    <section>
+   <div class="main">
+    <div class="sunmain">
+    <div class="box box1">
+        1
+    </div>
+    <div class="box box2">
+        2
+    </div>
+    <div class="box box3">
+        3
+    </div>
+    <div class="box box4">
+        4
+    </div>
+    <div class="box box5">
+        5
+    </div>
+    <div class="box box6">
+        6
+    </div>
+    <div class="box box7">
+        7
+    </div>
+    <div class="box box8">
+        8
+    </div>
+    <div class="box box9">
+        9
+    </div>
+    </div>
+   </div>
+</section>
+<section></section>
+<section></section>
+<section></section>
+<section></section>
+<p class="stickypara">
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id distinctio officiis autem, qui sint nam voluptate quia veniam amet.
+</p>
+<section></section>
+<section></section>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
